@@ -160,12 +160,6 @@
     self.brightness = 0.5;
     self.backgroundColor = [UIColor whiteColor];
 
-    CGFloat lineWidth = 1.f / [[UIScreen mainScreen] scale];
-    _lineLayer = [[CALayer alloc] init];
-    _lineLayer.backgroundColor = [[UIColor colorWithWhite:0.7 alpha:1] CGColor];
-    _lineLayer.frame = CGRectMake(0, -lineWidth, CGRectGetWidth(self.frame), lineWidth);
-    [self.layer addSublayer:_lineLayer];
-
     // タイルの中心にくるようにずらす
     CGPoint cursorOrigin = CGPointMake(
             -([HRColorCursor cursorSize].width - _tileSize.floatValue) / 2.0f,
