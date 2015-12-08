@@ -70,8 +70,8 @@
     _sliderLayer = [[CAGradientLayer alloc] initWithLayer:self.layer];
     _sliderLayer.startPoint = CGPointMake(0, .5);
     _sliderLayer.endPoint = CGPointMake(1, .5);
-    _sliderLayer.borderColor = [[UIColor lightGrayColor] CGColor];
-    _sliderLayer.borderWidth = 1.f / [[UIScreen mainScreen] scale];
+    //_sliderLayer.borderColor = [[UIColor lightGrayColor] CGColor];
+    //_sliderLayer.borderWidth = 1.f / [[UIScreen mainScreen] scale];
 
     [self.layer addSublayer:_sliderLayer];
 
@@ -99,7 +99,7 @@
     _brightnessCursor.center = CGPointMake(
             CGRectGetMinX(_controlFrame),
             CGRectGetMidY(_controlFrame));
-    _sliderLayer.cornerRadius = _renderingFrame.size.height / 2;
+    //_sliderLayer.cornerRadius = _renderingFrame.size.height / 2;
     _sliderLayer.frame = _renderingFrame;
     [self updateCursor];
 }
